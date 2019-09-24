@@ -1,0 +1,27 @@
+{
+  "name": "rollup-inline-svg",
+  "version": "1.0.0",
+  "description": "Inline SVG images in javascript files",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "example": "rollup -c ./example/rollup.config.js"
+  },
+  "devDependencies": {
+    "rollup": "^1.21.4",
+    "rollup-pluginutils": "^2.8.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bravecow/rollup-inline-svg.git"
+  },
+  "keywords": [
+    "rollup",
+    "inline",
+    "svg"
+  ],
+  "bugs": {
+    "url": "https://github.com/bravecow/rollup-inline-svg/issues"
+  },
+  "homepage": "https://github.com/bravecow/rollup-inline-svg#readme"
+}
