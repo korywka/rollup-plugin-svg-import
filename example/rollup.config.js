@@ -1,4 +1,4 @@
-import inlineSVG from '../index';
+const inlineSVG = require('../index');
 
 export default {
   input: './example/input.js',

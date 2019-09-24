@@ -13,7 +13,8 @@
   "keywords": [
     "rollup",
     "inline",
-    "svg"
+    "svg",
+    "rollup-plugin"
   ],
   "homepage": "https://github.com/bravecow/rollup-inline-svg#readme",
   "repository": "bravecow/rollup-inline-svg",

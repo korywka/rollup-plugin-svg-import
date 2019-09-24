@@ -13,7 +13,7 @@ export default function(attrs) {
 };
 `;
 
-export default function inlineSVG(options = {}) {
+module.exports = function (options = {}) {
   const filter = createFilter(options.include, options.exclude);
 
   return {
@@ -24,4 +24,4 @@ export default function inlineSVG(options = {}) {
       return inject(content);
     },
   };
-}
+};
