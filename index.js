@@ -21,7 +21,10 @@ module.exports = function (options = {}) {
     transform: (code, id) => {
       if (!filter(id) || extname(id) !== '.svg') return null;
       const content = JSON.stringify(code);
-      return inject(content);
+      return {
+        code: inject(content),
+        map: {mappings: ''},
+      };
     },
   };
 };
