@@ -21,7 +21,10 @@ export default {
     format: 'cjs',
   },
   plugins: [
-    inlineSVG(),
+    inlineSVG({
+      // process SVG to String or DOM Node. Default: false
+      stringify: false
+    }),
   ],
 };
 ```

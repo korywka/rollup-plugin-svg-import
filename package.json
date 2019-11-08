@@ -1,6 +1,6 @@
 {
   "name": "rollup-inline-svg",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Inline SVG images in javascript files",
   "main": "index.js",
   "scripts": {

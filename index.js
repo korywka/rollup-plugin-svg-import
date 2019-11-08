@@ -1,7 +1,9 @@
 const extname = require('path').extname;
 const createFilter = require('rollup-pluginutils').createFilter;
 
-const inject = (svg) => `
+const inject = (svg, stringify) => {
+  const result = stringify ? 'node.outerHTML' : 'node';
+  return `
 export default function(attrs) {
   var node = (new DOMParser().parseFromString(${svg}, 'text/xml')).firstChild;
   if (attrs) {
@@ -9,10 +11,16 @@ export default function(attrs) {
       node.setAttribute(key, attrs[key]);
     });
   }
-  return node;
+  return ${result};
+};`
 };
-`;
 
+/**
+ * @param options
+ * @param options.include
+ * @param options.exclude
+ * @param options.stringify - if true returns String, otherwise returns DOM Node
+ */
 module.exports = function (options = {}) {
   const filter = createFilter(options.include, options.exclude);
 
@@ -22,8 +30,8 @@ module.exports = function (options = {}) {
       if (!filter(id) || extname(id) !== '.svg') return null;
       const content = JSON.stringify(code);
       return {
-        code: inject(content),
-        map: {mappings: ''},
+        code: inject(content, options.stringify),
+        map: { mappings: '' },
       };
     },
   };
