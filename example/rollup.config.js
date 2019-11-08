@@ -1,4 +1,4 @@
-const inlineSVG = require('../index');
+const svg = require('../index');
 
 export default {
   input: './example/input.js',
@@ -7,6 +7,6 @@ export default {
     format: 'cjs',
   },
   plugins: [
-    inlineSVG(),
+    svg(),
   ],
 }

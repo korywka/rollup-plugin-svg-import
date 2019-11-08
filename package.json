@@ -1,7 +1,7 @@
 {
-  "name": "rollup-inline-svg",
+  "name": "rollup-plugin-svg-import",
   "version": "1.1.0",
-  "description": "Inline SVG images in javascript files",
+  "description": "Import SVG images in javascript files",
   "main": "index.js",
   "scripts": {
     "example": "rollup -c ./example/rollup.config.js"
@@ -12,11 +12,12 @@
   },
   "keywords": [
     "rollup",
+    "import",
     "inline",
     "svg",
     "rollup-plugin"
   ],
-  "homepage": "https://github.com/bravecow/rollup-inline-svg#readme",
-  "repository": "bravecow/rollup-inline-svg",
+  "homepage": "https://github.com/bravecow/rollup-plugin-svg-import#readme",
+  "repository": "bravecow/rollup-plugin-svg-import",
   "license": "MIT"
 }

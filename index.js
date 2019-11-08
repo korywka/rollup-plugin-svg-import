@@ -25,7 +25,7 @@ module.exports = function (options = {}) {
   const filter = createFilter(options.include, options.exclude);
 
   return {
-    name: 'inline-svg',
+    name: 'svg-import',
     transform: (code, id) => {
       if (!filter(id) || extname(id) !== '.svg') return null;
       const content = JSON.stringify(code);

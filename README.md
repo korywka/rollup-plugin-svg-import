@@ -5,14 +5,14 @@ Inline SVG files
 ## Installation
 
 ```shell script
-npm install --save-dev rollup-inline-svg
+npm install --save-dev rollup-plugin-svg-import
 ```
 
 ## Usage
 
 ```javascript
 // rollup.config.js
-import inlineSVG from 'rollup-inline-svg';
+import svg from 'rollup-plugin-svg-import';
 
 export default {
   input: './input.js',
@@ -21,7 +21,7 @@ export default {
     format: 'cjs',
   },
   plugins: [
-    inlineSVG({
+    svg({
       // process SVG to String or DOM Node. Default: false
       stringify: false
     }),
