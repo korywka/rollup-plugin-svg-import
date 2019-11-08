@@ -1,6 +1,6 @@
-# rollup-inline-svg
+# rollup-plugin-svg-import
 
-Inline SVG files
+Import SVG files
 
 ## Installation
 
