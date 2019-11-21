@@ -20,16 +20,15 @@ function star(attrs) {
   return node;
 }
 
-document.body.appendChild(compass());
-
-document.body.appendChild(compass({
-  fill: '#2196f3'
-}));
-
-document.body.appendChild(star({
-  fill: '#e91e63'
-}));
-
-document.body.appendChild(star({
-  fill: '#9c27b0'
-}));
+{
+  document.body.appendChild(compass());
+  document.body.appendChild(compass({
+    fill: '#2196f3'
+  }));
+  document.body.appendChild(star({
+    fill: '#e91e63'
+  }));
+  document.body.appendChild(star({
+    fill: '#9c27b0'
+  }));
+}

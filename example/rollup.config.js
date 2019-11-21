@@ -7,6 +7,8 @@ export default {
     format: 'cjs',
   },
   plugins: [
-    svg(),
+    svg({
+      stringify: false
+    }),
   ],
 }

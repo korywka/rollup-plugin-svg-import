@@ -22,7 +22,7 @@ export default {
   },
   plugins: [
     svg({
-      // process SVG to String or DOM Node. Default: false
+      // process SVG to DOM Node or String. Default: false
       stringify: false
     }),
   ],
@@ -42,6 +42,16 @@ document.body.appendChild(star({
   fill: '#e91e63',
   class: 'icon'
 }));
+```
+
+If you need SSR support, with `stringify` option on:
+
+```javascript
+import compass from './compass.svg';
+import star from './star.svg';
+
+document.body.innerHTML += compass;
+document.body.innerHTML += star;
 ```
 
 ## License
