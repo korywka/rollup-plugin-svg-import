@@ -2,18 +2,12 @@ const extname = require('path').extname;
 const createFilter = require('rollup-pluginutils').createFilter;
 
 const injectNode = (svg) => (`
-export default function(attrs) {
-  var node = (new DOMParser().parseFromString(${svg}, 'text/xml')).firstChild;
-  if (attrs) {
-    Object.keys(attrs).forEach(function(key) {
-      node.setAttribute(key, attrs[key]);
-    });
-  }
-  return node;
+export default function() {
+  return (new DOMParser().parseFromString(${svg}, 'image/svg+xml')).firstChild;
 };
 `);
 
-const injectString = (svg) => `export default ${svg}`;
+const injectString = (svg) => `export default ${svg};`;
 
 /**
  * @param options

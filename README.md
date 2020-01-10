@@ -29,29 +29,20 @@ export default {
 };
 ```
 
-You can now use SVG in your bundle like so:
+You can now use SVG DOM Node in your bundle like so:
 
 ```javascript
-import compass from './compass.svg';
-import star from './star.svg';
+import icon from './icon.svg';
 
-document.body.appendChild(compass());
-
-// with attributes override
-document.body.appendChild(star({
-  fill: '#e91e63',
-  class: 'icon'
-}));
+document.body.appendChild(icon());
 ```
 
-If you need SSR support, with `stringify` option on:
+If you need SSR support, with `stringify` option **on** SVG output is just string:
 
 ```javascript
-import compass from './compass.svg';
-import star from './star.svg';
+import icon from './icon.svg';
 
-document.body.innerHTML += compass;
-document.body.innerHTML += star;
+document.body.innerHTML += icon;
 ```
 
 ## License
