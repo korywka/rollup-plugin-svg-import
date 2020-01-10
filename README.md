@@ -37,7 +37,7 @@ import icon from './icon.svg';
 document.body.appendChild(icon());
 ```
 
-If you need SSR support, with `stringify` option **on** SVG output is just string:
+If you need SSR support, with `stringify` option `on` SVG output is just string:
 
 ```javascript
 import icon from './icon.svg';
