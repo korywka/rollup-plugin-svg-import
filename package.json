@@ -9,7 +9,7 @@
     "test": "yarn test:dom && yarn test:ssr"
   },
   "devDependencies": {
-    "rollup": "^1.21.4",
+    "rollup": "^1.29.0",
     "rollup-pluginutils": "^2.8.2"
   },
   "keywords": [
