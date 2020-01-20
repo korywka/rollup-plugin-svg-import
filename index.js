@@ -1,5 +1,5 @@
 const extname = require('path').extname;
-const createFilter = require('rollup-pluginutils').createFilter;
+const createFilter = require('@rollup/pluginutils').createFilter;
 
 const injectNode = (svg) => (`
 export default function() {

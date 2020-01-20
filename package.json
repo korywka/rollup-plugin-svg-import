@@ -8,9 +8,11 @@
     "test:ssr": "rollup --environment SSR -c test/rollup.config.js",
     "test": "yarn test:dom && yarn test:ssr"
   },
-  "devDependencies": {
-    "rollup": "^1.29.0",
-    "rollup-pluginutils": "^2.8.2"
+  "dependencies": {
+    "@rollup/pluginutils": "^3.0.4"
+  },
+  "peerDependencies": {
+    "rollup": "^1.29.0"
   },
   "keywords": [
     "rollup",
