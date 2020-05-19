@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-svg-import",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Import SVG images in javascript files",
   "main": "index.js",
   "scripts": {
@@ -9,10 +9,13 @@
     "test": "yarn test:dom && yarn test:ssr"
   },
   "dependencies": {
-    "@rollup/pluginutils": "^3.0.4"
+    "@rollup/pluginutils": "^3.0.10"
+  },
+  "devDependencies": {
+    "rollup": "^2.10.4"
   },
   "peerDependencies": {
-    "rollup": "^1.29.0"
+    "rollup": "^1.29.0 <3.0.0"
   },
   "keywords": [
     "rollup",
