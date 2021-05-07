@@ -24,7 +24,7 @@
     "svg",
     "rollup-plugin"
   ],
-  "homepage": "https://github.com/bravecow/rollup-plugin-svg-import#readme",
-  "repository": "bravecow/rollup-plugin-svg-import",
+  "homepage": "https://github.com/korywka/rollup-plugin-svg-import#readme",
+  "repository": "korywka/rollup-plugin-svg-import",
   "license": "MIT"
 }
