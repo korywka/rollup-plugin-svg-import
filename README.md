@@ -10,7 +10,7 @@ npm install --save-dev rollup-plugin-svg-import
 
 ## Usage
 
-Import SVG image as a DOM Node:
+Import SVG image as a `<svg>` DOM Node:
 
 ```javascript
 import icon from './icon.svg';
