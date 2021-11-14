@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<p>DOM Node status: <span id="status-node"></span></p>
+<p>String status: <span id="status-string"></span></p>
+
+<script type="module">
+  import { iconReference } from "./icon.reference.js";
+  import { default as iconNode } from "./output.node.js";
+  import { default as iconString } from "./output.string.js";
+
+  document.body.appendChild(iconNode());
+  const isTestNodePass = iconReference.trim() === document.querySelector('svg').outerHTML;
+  const isTestStringPass = iconReference.trim() === iconString;
+
+  document.getElementById('status-node').textContent = isTestNodePass ? `✅` : `❌`;
+  document.getElementById('status-string').textContent = isTestStringPass ? `✅` : `❌`;
+</script>
+</body>
+</html>

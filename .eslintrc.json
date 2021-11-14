@@ -1,0 +1,6 @@
+{
+  "extends": [
+    "eslint-config-for-javascript"
+  ],
+  "ignorePatterns": ["test"]
+}

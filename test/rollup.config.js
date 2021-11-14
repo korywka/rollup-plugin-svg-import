@@ -1,16 +1,20 @@
 const svg = require('../index');
 
-const isSSR = process.env.SSR === 'true';
-
-export default {
-  input: `./test/input${isSSR ? '.ssr' : ''}.js`,
-  output: {
-    file: `./test/output${isSSR ? '.ssr' : ''}.js`,
-    format: 'cjs',
+export default [
+  {
+    input: './test/icon.svg',
+    output: {
+      file: './test/output.string.js',
+      format: 'esm',
+    },
+    plugins: [svg({ stringify: true })],
   },
-  plugins: [
-    svg({
-      stringify: isSSR,
-    }),
-  ],
-}
+  {
+    input: './test/icon.svg',
+    output: {
+      file: './test/output.node.js',
+      format: 'esm',
+    },
+    plugins: [svg({ stringify: false })],
+  },
+];

@@ -1,18 +1,20 @@
 {
   "name": "rollup-plugin-svg-import",
-  "version": "1.5.1",
-  "description": "Import SVG images in javascript files",
+  "version": "1.6.0",
+  "description": "Import SVG images in javascript file",
   "main": "index.js",
   "scripts": {
-    "test:dom": "rollup -c test/rollup.config.js",
-    "test:ssr": "rollup --environment SSR -c test/rollup.config.js",
-    "test": "yarn test:dom && yarn test:ssr"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "rollup -c test/rollup.config.js"
   },
   "dependencies": {
-    "@rollup/pluginutils": "^3.0.10"
+    "@rollup/pluginutils": "^4.1.1"
   },
   "devDependencies": {
-    "rollup": "^2.10.4"
+    "eslint": "8.2.0",
+    "eslint-config-for-javascript": "1.2.0",
+    "rollup": "2.29.0"
   },
   "peerDependencies": {
     "rollup": ">=1.29.0 <3.0.0"
@@ -24,7 +26,7 @@
     "svg",
     "rollup-plugin"
   ],
-  "homepage": "https://github.com/bravecow/rollup-plugin-svg-import#readme",
-  "repository": "bravecow/rollup-plugin-svg-import",
+  "homepage": "https://github.com/korywka/rollup-plugin-svg-import#readme",
+  "repository": "korywka/rollup-plugin-svg-import",
   "license": "MIT"
 }
