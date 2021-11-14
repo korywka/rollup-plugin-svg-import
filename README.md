@@ -1,6 +1,6 @@
 # rollup-plugin-svg-import
 
-Import SVG files
+Import `.svg` images in javascript files
 
 ## Installation
 
@@ -9,6 +9,24 @@ npm install --save-dev rollup-plugin-svg-import
 ```
 
 ## Usage
+
+Import SVG image as a DOM Node:
+
+```javascript
+import icon from './icon.svg';
+
+document.body.appendChild(icon());
+```
+
+For SSR support set `stringify` option to `true`, so SVG output is just a string:
+
+```javascript
+import icon from './icon.svg';
+
+document.body.innerHTML += icon;
+```
+
+## Configuration
 
 ```javascript
 // rollup.config.js
@@ -27,22 +45,6 @@ export default {
     }),
   ],
 };
-```
-
-You can now use SVG DOM Node in your bundle like so:
-
-```javascript
-import icon from './icon.svg';
-
-document.body.appendChild(icon());
-```
-
-For SSR support set `stringify` option to `true`, so SVG output is just a string:
-
-```javascript
-import icon from './icon.svg';
-
-document.body.innerHTML += icon;
 ```
 
 ## License
