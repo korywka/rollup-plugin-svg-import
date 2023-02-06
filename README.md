@@ -4,7 +4,7 @@ Import `.svg` images in javascript files
 
 ## Installation
 
-```shell script
+```sh
 npm install --save-dev rollup-plugin-svg-import
 ```
 
@@ -12,7 +12,7 @@ npm install --save-dev rollup-plugin-svg-import
 
 Import SVG image as a `<svg>` DOM Node:
 
-```javascript
+```js
 import icon from './icon.svg';
 
 document.body.appendChild(icon());
@@ -20,7 +20,7 @@ document.body.appendChild(icon());
 
 For SSR support set `stringify` option to `true`, so SVG output is just a string:
 
-```javascript
+```js
 import icon from './icon.svg';
 
 document.body.innerHTML += icon;
@@ -46,7 +46,3 @@ export default {
   ],
 };
 ```
-
-## License
-
-MIT

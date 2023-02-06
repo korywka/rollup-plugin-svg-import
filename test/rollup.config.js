@@ -1,20 +1,20 @@
-const svg = require('../index');
+import svg from '../index.js';
 
 export default [
-  {
-    input: './test/icon.svg',
-    output: {
-      file: './test/output.string.js',
-      format: 'esm',
-    },
-    plugins: [svg({ stringify: true })],
-  },
-  {
-    input: './test/icon.svg',
-    output: {
-      file: './test/output.node.js',
-      format: 'esm',
-    },
-    plugins: [svg({ stringify: false })],
-  },
+	{
+		input: './test/icon.svg',
+		output: {
+			file: './test/output.string.js',
+			format: 'esm',
+		},
+		plugins: [svg({ stringify: true })],
+	},
+	{
+		input: './test/icon.svg',
+		output: {
+			file: './test/output.node.js',
+			format: 'esm',
+		},
+		plugins: [svg({ stringify: false })],
+	},
 ];
