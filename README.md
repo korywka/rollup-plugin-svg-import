@@ -36,7 +36,7 @@ export default {
   input: './input.js',
   output: {
     file: './output.js',
-    format: 'cjs',
+    format: 'esm',
   },
   plugins: [
     svg({
