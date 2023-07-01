@@ -14,6 +14,7 @@ const injectString = (svg) => `export default ${svg};`;
  * @param options.include
  * @param options.exclude
  * @param options.stringify - if true returns String, otherwise returns DOM Node
+ * @returns {import('rollup').Plugin}
  */
 export default function svgImportPlugin(options = {}) {
 	const filter = createFilter(options.include, options.exclude);

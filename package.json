@@ -13,7 +13,7 @@
 	},
 	"devDependencies": {
 		"eslint": "8.33.0",
-		"eslint-config-ecmascript": "2.2.2",
+		"eslint-config-ecmascript": "2.5.0",
 		"rollup": "3.14.0"
 	},
 	"peerDependencies": {
