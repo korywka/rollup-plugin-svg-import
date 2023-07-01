@@ -10,7 +10,7 @@ npm install --save-dev rollup-plugin-svg-import
 
 ## Usage
 
-Import SVG image as a `<svg>` DOM Node:
+By default SVG import returns a `<svg>` DOM node:
 
 ```js
 import icon from './icon.svg';
@@ -18,7 +18,7 @@ import icon from './icon.svg';
 document.body.appendChild(icon());
 ```
 
-For SSR support set `stringify` option to `true`, so SVG output is just a string:
+To import SVG image as a string, e.g. for SSR, set `stringify` to `true`:
 
 ```js
 import icon from './icon.svg';
@@ -40,8 +40,7 @@ export default {
   },
   plugins: [
     svg({
-      // process SVG to DOM Node or String. Default: false
-      stringify: false
+      stringify: true // Optional: returns SVG as a string instead of DOM node
     }),
   ],
 };
