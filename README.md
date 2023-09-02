@@ -40,7 +40,12 @@ export default {
   },
   plugins: [
     svg({
-      stringify: true // Optional: returns SVG as a string instead of DOM node
+     /**
+      * If `true`, instructs the plugin to import an SVG as string.
+      * For example, for Server Side Rendering.
+      * Otherwise, the plugin imports SVG as DOM node.
+      */
+      stringify: true
     }),
   ],
 };

@@ -1,8 +1,9 @@
 {
-	"extends": [
-		"eslint-config-ecmascript"
-	],
-	"ignorePatterns": [
-		"test"
-	]
+  "extends": [
+    "eslint-config-ecmascript"
+  ],
+  "ignorePatterns": [
+    "test",
+    "*.d.ts"
+  ]
 }
