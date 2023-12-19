@@ -1,11 +1,11 @@
 import { extname } from 'node:path';
 import { createFilter } from '@rollup/pluginutils';
 
-const injectNode = (svg) => (`
+const injectNode = (svg) => `
 export default function() {
 	return (new DOMParser().parseFromString(${svg}, 'image/svg+xml')).firstChild;
 };
-`);
+`;
 
 const injectString = (svg) => `export default ${svg};`;
 

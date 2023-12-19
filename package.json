@@ -1,38 +1,38 @@
 {
-  "name": "rollup-plugin-svg-import",
-  "version": "2.1.0",
-  "description": "Import SVG images in javascript file",
-  "type": "module",
-  "main": "index.js",
-  "scripts": {
-    "lint": "eslint . --fix",
-    "test": "rollup -c test/rollup.config.js"
-  },
-  "types": "./types.d.ts",
-  "dependencies": {
-    "@rollup/pluginutils": "^5.0.1"
-  },
-  "devDependencies": {
-    "eslint": "8.48.0",
-    "eslint-config-ecmascript": "2.5.0",
-    "rollup": "3.28.1"
-  },
-  "peerDependencies": {
-    "rollup": "^2.0.0||^3.0.0"
-  },
-  "files": [
-    "index.js",
-    "types.d.ts"
-  ],
-  "keywords": [
-    "rollup",
-    "plugin",
-    "import",
-    "svg"
-  ],
-  "engines": {
-    "node": ">=14.0.0"
-  },
-  "repository": "korywka/rollup-plugin-svg-import",
-  "license": "MIT"
+	"name": "rollup-plugin-svg-import",
+	"version": "3.0.0",
+	"description": "Import SVG images in javascript file",
+	"type": "module",
+	"main": "index.js",
+	"scripts": {
+		"lint": "eslint . --fix",
+		"test": "rollup -c test/rollup.config.js"
+	},
+	"types": "./types.d.ts",
+	"dependencies": {
+		"@rollup/pluginutils": "^5.0.1"
+	},
+	"devDependencies": {
+		"eslint": "8.56.0",
+		"eslint-config-ecmascript": "2.6.0",
+		"rollup": "4.9.1"
+	},
+	"peerDependencies": {
+		"rollup": "^3.0.0||^4.0.0"
+	},
+	"files": [
+		"index.js",
+		"types.d.ts"
+	],
+	"keywords": [
+		"rollup",
+		"plugin",
+		"import",
+		"svg"
+	],
+	"engines": {
+		"node": ">=18.0.0"
+	},
+	"repository": "korywka/rollup-plugin-svg-import",
+	"license": "MIT"
 }
